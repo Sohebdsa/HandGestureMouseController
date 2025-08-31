@@ -33,7 +33,7 @@ A Python application that enables full mouse cursor control using hand gestures,
 ### Windows Installation
 1. Download Python from [python.org](https://python.org), run installer and check "Add Python to PATH"
 2. Open Command Prompt and verify: `python --version`
-3. Clone repository: `git clone https://github.com/yourusername/hand-cursor-control.git`
+3. Clone repository: `https://github.com/Sohebdsa/HandGestureMouseController.git`
 4. Navigate to folder: `cd hand-cursor-control`
 5. Create virtual environment: `python -m venv hand_cursor_env`
 6. Activate environment: `hand_cursor_env\Scripts\activate`
