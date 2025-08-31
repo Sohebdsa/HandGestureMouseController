@@ -59,3 +59,71 @@ A Python application that enables full mouse cursor control using hand gestures,
 7. Run application: `python main.py`
 
 ### Required Dependencies (requirements.txt)
+opencv-python==4.8.1.78
+mediapipe==0.10.7
+pyautogui==0.9.54
+numpy==1.24.3
+pillow==10.0.1
+requests==2.31.0
+
+## 📱 DroidCam Setup
+
+To use your phone as a camera: Download DroidCam from Google Play Store or App Store, ensure phone and computer are on same WiFi network, note IP address shown in DroidCam app, select "DroidCam (Phone)" in application and enter IP address, test connection before starting tracking. For Windows users, download DroidCam drivers from [dev47apps.com](https://www.dev47apps.com/).
+
+## 🎮 Usage & Configuration
+
+Run `python main.py`, select camera source (local webcam or DroidCam), adjust sensitivity and smoothing settings, click "Start Tracking" to begin hand cursor control, use gestures to control mouse cursor. Access "Adaptive Training Game" to optimize settings through drag-and-drop exercises that automatically adjust difficulty and find optimal sensitivity values using BFS algorithm.
+
+### Gesture Customization
+Edit `gesture_settings.json` to customize actions:
+
+## 📁 Project Structure
+hand_cursor_control/
+├── main.py # Application entry point
+├── hand_tracker.py # Hand detection and gesture recognition
+├── cursor_controller.py # Mouse cursor control logic
+├── gui_controller.py # Main GUI interface
+├── gesture_manager.py # Gesture configuration management
+├── camera_manager.py # Camera handling (local and DroidCam)
+├── adaptive_game.py # Training game module
+├── gesture_settings.json # Gesture configuration file
+├── requirements.txt # Python dependencies
+├── LICENSE # MIT License file
+└── README.md # This file
+
+
+## 🛠️ Advanced Features & Customization
+
+**Development Setup**: Clone repository, create virtual environment, install with `pip install -e ".[dev]"`, run tests with `pytest`, format code with `black .`
+
+**Linux System Service**: Create `/etc/systemd/system/hand-cursor-control.service` with proper User, WorkingDirectory, Environment PATH, and ExecStart configurations, then enable with `sudo systemctl daemon-reload && sudo systemctl enable hand-cursor-control`
+
+**Adding New Gestures**: Modify `hand_tracker.py` for detection, update `gesture_manager.py` with action types, add assignments in `gesture_settings.json`, update gesture guide in `gui_controller.py`
+
+**UI Customization**: Modify color schemes and layouts in `gui_controller.py`, adjust styling in GUI setup methods, add new controls as needed
+
+## 🤝 Contributing & Support
+
+**Contributing**: Fork repository, create feature branch (`git checkout -b feature/AmazingFeature`), commit changes (`git commit -m 'Add AmazingFeature'`), push to branch (`git push origin feature/AmazingFeature`), open Pull Request
+
+**Getting Help**: Check troubleshooting section, review existing GitHub Issues, create new issue with OS details, Python version (`python --version`), full error message, and reproduction steps
+
+**Roadmap**: Multiple hand tracking, voice commands integration, machine learning for personalized gestures, mobile app companion, eye tracking support
+
+## 📄 License & Acknowledgments
+
+Licensed under MIT License. Built with **MediaPipe** for hand tracking, **OpenCV** for computer vision, **PyAutoGUI** for cursor control, **DroidCam** for mobile camera integration.
+
+## 🎯 Quick Start Summary
+
+1. Install Python 3.7+
+2. Clone: `git clone https://github.com/yourusername/hand-cursor-control.git`
+3. Setup: `cd hand-cursor-control && python -m venv hand_cursor_env`
+4. Activate: `hand_cursor_env\Scripts\activate` (Windows) or `source hand_cursor_env/bin/activate` (macOS/Linux)
+5. Install: `pip install -r requirements.txt`
+6. Run: `python main.py`
+7. Configure camera source and start tracking
+8. Use hand gestures to control cursor
+
+**Made by sohebdsa with ❤️ for accessibility and hands-free computing** - Give a ⭐️ if this project helped you! Happy hand controlling! 🤚✨
+
