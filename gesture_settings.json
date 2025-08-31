@@ -1,0 +1,22 @@
+{
+  "point": {
+    "action": "cursor_move",
+    "params": {}
+  },
+  "pinch": {
+    "action": "click_hold",
+    "params": {}
+  },
+  "fist": {
+    "action": "left_click",
+    "params": {}
+  },
+  "peace": {
+    "action": "scroll_up",
+    "params": {}
+  },
+  "open_hand": {
+    "action": "scroll_up",
+    "params": {}
+  }
+}
