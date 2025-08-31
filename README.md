@@ -60,10 +60,15 @@ A Python application that enables full mouse cursor control using hand gestures,
 
 ### Required Dependencies (requirements.txt)
 opencv-python==4.8.1.78
+
 mediapipe==0.10.7
+
 pyautogui==0.9.54
+
 numpy==1.24.3
+
 pillow==10.0.1
+
 requests==2.31.0
 
 
