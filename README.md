@@ -24,7 +24,7 @@ A Python application that enables full mouse cursor control using hand gestures,
 | ✌️ **Peace** | Right Click | Two-finger gesture for right-click |
 | 🖐️ **Open Hand** | Scroll Up | Open hand gesture for scrolling |
 
-##Demo Screenshot
+## Demo Screenshot
 ![Demo Screenshot](testImgs/Screenshot%202025-08-31%20203930.png)
 
 ## 🚀 Installation & Setup
